@@ -1,0 +1,33 @@
+body{
+    background-color: #AB30E8;
+    color:  #C0E83C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bodoni Moda";
+    font-size: 40pt;
+    
+}
+
+header{
+    text-align: center;
+}
+
+#hero, footer{
+    font-family: "Oswald";
+    text-align: center;
+    background-color: #732B7D;
+    padding: 15px;
+}
+
+#hero img{
+    width: 300px;
+}
+
+#bio{
+    text-align: center;
+    font-family: 'Lucida Sans';
+}
+footer{
+    font-size: 15px;
+}
