@@ -54,3 +54,10 @@ footer{
 #gallery figure{
     text-align: center;
 }
+
+#lit{
+    padding: 5px;
+    border: 2px dotted red;
+    margin: 0 auto;
+    max-width: 100%;
+}
