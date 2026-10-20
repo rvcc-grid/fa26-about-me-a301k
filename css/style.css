@@ -5,8 +5,8 @@ body{
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Bodoni Moda";
-    font-size: 40pt;
-    
+    font-size: 30pt;
+    text-align: center;
 }
 
 header{
@@ -30,4 +30,27 @@ header{
 }
 footer{
     font-size: 15px;
+}
+/* Hobbies */
+#hobbies ul li:nth-child(even) {
+    color: grey;
+}
+
+#hobbies ul li:nth-child(odd) {
+    color: lightcyan;
+}
+
+#hobbies ul li{
+    font-family: 'Lucida Sans ';
+}
+/* Gallery */
+#gallery{
+    border: 2px solid lightblue;
+}
+#gallery img{
+    max-height: 100%;
+}
+
+#gallery figure{
+    text-align: center;
 }
