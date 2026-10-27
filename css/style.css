@@ -71,7 +71,7 @@ section#hobbies{
     margin: 0 auto;
     max-width: 100%;
 }
-
+/* Small screen size */
 @media screen and (min-width: 60em) {
     figure{
         display: grid;
@@ -84,4 +84,35 @@ section#hobbies{
         align-items: center;
         font-size: 3rem;
     }
+
+    figure img{
+        width: 100%;
+    }
+
+    #lit div{
+        max-width: 100%;
+        columns: 20rem;
+    }
 } 
+
+/* Large screen size */
+
+@media screen and (min-width: 100em){
+
+    #gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    hr{
+        display: none;
+    }
+
+    #gallery h2{
+        grid: 1/-1;
+    }
+
+    figure{
+        display: block;
+    }
+}
