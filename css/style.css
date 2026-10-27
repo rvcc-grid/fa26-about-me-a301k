@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30pt;
     text-align: center;
 }
+h2{
+    margin: .2em;
+
+}
 
 header{
     text-align: center;
@@ -43,6 +47,12 @@ footer{
 #hobbies ul li{
     font-family: 'Lucida Sans ';
 }
+section#hobbies{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+}
 /* Gallery */
 #gallery{
     border: 2px solid lightblue;
@@ -61,3 +71,17 @@ footer{
     margin: 0 auto;
     max-width: 100%;
 }
+
+@media screen and (min-width: 60em) {
+    figure{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figcaption{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+    }
+} 
