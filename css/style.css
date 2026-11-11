@@ -1,40 +1,49 @@
-body{
+body {
     background-color: #AB30E8;
-    color:  #C0E83C;
+    color: #C0E83C;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Bodoni Moda";
     font-size: 30pt;
     text-align: center;
 }
-h2{
+
+h2 {
     margin: .2em;
 
 }
 
-header{
+header {
     text-align: center;
 }
 
-#hero, footer{
+#hero,
+footer {
     font-family: "Oswald";
     text-align: center;
     background-color: #732B7D;
     padding: 15px;
 }
 
-#hero img{
+#hero img {
     width: 300px;
 }
 
-#bio{
+#bio {
     text-align: center;
     font-family: 'Lucida Sans';
 }
-footer{
+
+footer {
     font-size: 15px;
 }
+
 /* Hobbies */
 #hobbies ul li:nth-child(even) {
     color: grey;
@@ -44,75 +53,103 @@ footer{
     color: lightcyan;
 }
 
-#hobbies ul li{
+#hobbies ul li {
     font-family: 'Lucida Sans ';
 }
-section#hobbies{
+
+section#hobbies {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
 
 }
+
 /* Gallery */
-#gallery{
+#gallery {
     border: 2px solid lightblue;
 }
-#gallery img{
+
+#gallery img {
     max-height: 100%;
 }
 
-#gallery figure{
+#gallery figure {
     text-align: center;
 }
 
-#lit{
+#lit {
     padding: 5px;
     border: 2px dotted red;
     margin: 0 auto;
     max-width: 100%;
 }
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+#video figcaption {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Lucida Sans ';
+    padding: 4px;
+
+}
+
 /* Small screen size */
 @media screen and (min-width: 60em) {
-    figure{
+    figure {
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
 
-    figcaption{
+    figcaption {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 3rem;
     }
 
-    figure img{
+    figure img {
         width: 100%;
     }
 
-    #lit div{
+    #lit div {
         max-width: 100%;
         columns: 20rem;
     }
-} 
+
+
+}
 
 /* Large screen size */
 
-@media screen and (min-width: 100em){
+@media screen and (min-width: 100em) {
 
-    #gallery{
+    #gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    hr{
+    hr {
         display: none;
     }
 
-    #gallery h2{
+    #gallery h2 {
         grid: 1/-1;
     }
 
-    figure{
+    figure {
         display: block;
     }
+
+    iframe {
+        aspect-ratio: 16 / 9;
+    }
+
+
 }
