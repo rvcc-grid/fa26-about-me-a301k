@@ -100,6 +100,23 @@ iframe {
 
 }
 
+#contact ul {
+    font-size: 30px;
+}
+
+#contact label {
+    font-size: 30px;
+}
+
+a {
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: "Oswald";
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
 /* Small screen size */
 @media screen and (min-width: 60em) {
     figure {
@@ -122,6 +139,7 @@ iframe {
         max-width: 100%;
         columns: 20rem;
     }
+
 
 
 }
