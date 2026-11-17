@@ -125,7 +125,7 @@
 
         <section id="contact">
             <h2>
-                <form action="https://api.web3forms.com/submit" method="POST">
+                <form class="flex-form" action="https://api.web3forms.com/submit" method="POST">
                     <fieldset>
                         <legend>
                             Contact Form
@@ -135,37 +135,53 @@
                         <input type="hidden" name="subject" value="New About me Form Submission">
                         <input type="hidden" name="redirect"
                             value="https://rvcc-grid.github.io/fa26-about-me-a301k/thanks.html">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" email="email" required>
+                        </div>
 
-                        <label for="name">Name:</label>
+                        <div>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" phone="phone" optional>
+                        </div>
 
+                        <div>
 
-                        <input type="text" name="name" required>
-                        <label for="email">Email:</label>
-                        <input type="email" email="email" required>
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" phone="phone" optional>
-                        <select name="Type">
-                            <option value="" disabled selected>Select a Phone</option>
-                            <option value="apple">Apple</option>
-                            <option value="android">Android</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <textarea id="message" name="message" rows="4" cols="50"
-                            placeholder="Enter your message here..."></textarea>
-                        <legend>Would you like a follow-up?</legend>
-                        <ul>
-                            <li>
-                                <input type="radio" id="followup-yes" name="followup" value="yes">
-                                <label for="followup-yes">Yes, follow up</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="followup-no" name="followup" value="no">
-                                <label for="followup-no">No, thank you</label>
-                            </li>
-                        </ul>
+                            <label for="Type">Phone Type:</label>
+                            <select name="Type">
+                                <option value="" disabled selected>Select a Phone</option>
+                                <option value="apple">Apple</option>
+                                <option value="android">Android</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message">Comments:</label>
+                            <textarea id="message" name="message" rows="4" cols="50"
+                                placeholder="Enter your message here..."></textarea>
+                        </div>
+                        <div>
+                            <legend>Would you like a follow-up?</legend>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="followup-yes" name="followup" value="yes">
+                                    <label for="followup-yes">Yes, follow up</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="followup-no" name="followup" value="no">
+                                    <label for="followup-no">No, thank you</label>
+                                </li>
+                            </ul>
+                        </div>
+
                         <body>
-                        <div class="h-captcha" data-captcha="true"></div>
-                        <script src="https://web3forms.com/client/script.js" async defer></script>
+                            <div class="h-captcha" data-captcha="true"></div>
+                            <script src="https://web3forms.com/client/script.js" async defer></script>
                         </body>
                         <button type="submit">Submit</button>
                     </fieldset>
