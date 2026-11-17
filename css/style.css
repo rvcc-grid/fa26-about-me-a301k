@@ -117,6 +117,7 @@ a {
     margin: 0 auto;
 }
 
+/* Form */
 .flex-form {
   display: flex;
   flex-direction: column;
